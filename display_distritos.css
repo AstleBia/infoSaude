@@ -1,0 +1,211 @@
+@import url('./root.css');
+@import url(./reset.css);
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+/*-------------header ---------------*/
+
+nav {
+    display: flex;
+    height: 4rem;
+    margin: 0rem;
+    align-items: center;
+}
+
+.title-principal {
+    display: flex;
+    align-self: center;
+    margin: 1rem auto 1rem 1rem;
+    padding: 0;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.nav-home {
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.nav-distritos {
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.nav-servicos {
+    display: flex;
+    margin: 0 2rem;
+}
+
+.nav-posto {
+    display: flex;
+    margin: 0rem 2rem;
+}
+.div-img {
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    margin: 0rem;
+    object-fit: cover;
+}
+
+/* ------------- header Carrossel --------------*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .carousel-controls,
+.carousel-indicators {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-controls {
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin: 2rem;
+  max-width: 2rem;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+
+/* ------------- main --------------*/
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54.2rem;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+    margin: 0rem 0rem 0rem 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 26rem;
+    height: 13rem;
+    margin: 2rem 0rem 0rem 0rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.card:hover{
+    height: 22rem;
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-title{
+    margin: 0.5rem ;
+}
+
+.card-text{
+    margin: 0.5rem ;
+}
+
+.map-section {
+    margin: 40px 0;
+}
+
+.map-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--color-text-blue);
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    background: #eee;
+    border-radius: 10px;
+    position: relative;
+}
+
+.map .marker {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #C24700;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,14 +1,6 @@
-/* variables */
-:root {
-    --color-text: #ffffff;
-    --color-text-gray: #6A6A6A;
-    --color-text-blue: #013D92; /* Corrigido o nome da variável */
-    --color-button-blue: #013D92;
-    --color-nav: #013D92;
-    --color-conteiner-white: #F9F9F9;
-    --color-carrosselg: #ccc;
-    --color-carrosselb: #333;
-}
+@import url('./root.css');
+@import url(./reset.css);
+
 
 /* components */
 .button {
@@ -22,7 +14,7 @@
 .container {
     background-color: var(--color-conteiner-white); /* Corrigido erro na variável */
     border-radius: 17px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 42px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*--------- main.home---------*/
